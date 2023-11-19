@@ -39,7 +39,7 @@ public:
 			cout << "도형이 없습니다!" << endl;
 			return;
 		}
-		for (int i = 1; i < index; i++) {
+		for (int i = 0; i < index; i++) {
 			pre = tmp;
 			tmp = tmp->getNext();
 		}
@@ -54,7 +54,7 @@ public:
 	}
 	void show() {
 		Shape* tmp = pStart;
-		int i = 1;
+		int i = 0;
 		while (tmp != NULL) {
 			cout << i++ << ": ";
 			tmp->paint();
